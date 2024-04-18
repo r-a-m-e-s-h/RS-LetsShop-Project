@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RH_Framework Practice Suite" parallel="methods">
+<groups>
+		<run>
+			<include name="Sanity"></include>
+		</run>
+
+	</groups>
+  <test thread-count="5" name="Test" >
+    <classes>
+      <class name="TestCases.E2E_Tc"/>
+      <class name="TestCases.Login_TC"/>
+      <class name="TestCases.CheckoutPage_TC"/>
+      <class name="TestCases.CartPage_TC"/>
+      <class name="TestCases.orderConfirmation_TC"/>
+      <class name="TestCases.ProductCatalogue_TC"/>
+     <!--  <class name="TestCases.BaseClass"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
